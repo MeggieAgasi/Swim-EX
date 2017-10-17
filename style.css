@@ -1,0 +1,39 @@
+
+.blue{
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+ 
+}
+ 
+.swimmer1{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-style: solid;
+}
+.swimmer2{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-style: solid;
+}
+.swimmer3{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-style: solid;
+}
+.page{
+    display: flex;
+    flex-direction: row;
+  
+}
+.judge{
+    padding-top: 150px;
+    height: 200px;
+}
