@@ -8,34 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
     <div class="page">
         <div class="blue">
-                <div data-swimmer1="swimmer1" class="swimmer1"> </div>   
-                <div data-swimmer2="swimmer2" class="swimmer2"></div>
-                <div data-swimmer3="swimmer3" class="swimmer3"></div>
-       
-        </div>   
-        <div data-judge="judge" class="judge"> <img src="jud.jpg" alt="judge"></div>
+                <div data-swimmer1="swimmer1" class="swimmer1" > </div>    
+                <div data-swimmer2="swimmer2" class="swimmer2"> </div>
+                <div data-swimmer3="swimmer3" class="swimmer3"> </div>
+        
+        </div>    
+        <div data-judge="judge" class="judge"> <img src="c:\HW\jud.jpg" alt="judge"></div>
     </div>
- 
+
 <script type="text/javascript">
 (function (){
 const pic = document.querySelector('[data-judge="judge"]');
 const swimmer1 = document.querySelector('[data-swimmer1="swimmer1"]');
-const swimmer2 = document.querySelector('[data-swimmer1="swimmer2"]');
-const swimmer3 = document.querySelector('[data-swimmer1="swimmer3"]');
- 
- 
+const swimmer2 = document.querySelector('[data-swimmer2="swimmer2"]');
+const swimmer3 = document.querySelector('[data-swimmer3="swimmer3"]');
+
+
 pic.addEventListener('click',function () {
- 
-    console.log('hello');
-   
- 
+
+    swimmer1.className = "swimmer1go";
+    swimmer2.className = "swimmer2go";
+    swimmer3.className = "swimmer3go";
+    
+
 },true);
 }());
- 
+
 </script>
- 
+
 </body>
 </html>

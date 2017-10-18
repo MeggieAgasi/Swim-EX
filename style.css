@@ -7,33 +7,87 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
- 
+
 }
- 
+
 .swimmer1{
     height: 50px;
     width: 50px;
     background-color: white;
     border-style: solid;
+  }
+
+.swimmer1go{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-style: solid;
+    animation: 5s swimmer1go ;
+
 }
 .swimmer2{
     height: 50px;
     width: 50px;
     background-color: white;
     border-style: solid;
+   
+}
+.swimmer2go{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-style: solid;
+    animation: 2s swimmer2go  ;
 }
 .swimmer3{
     height: 50px;
     width: 50px;
     background-color: white;
     border-style: solid;
+   }
+
+.swimmer3go{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-style: solid;
+    animation: 3s swimmer3go ;
 }
+
 .page{
     display: flex;
     flex-direction: row;
-  
+   
 }
 .judge{
     padding-top: 150px;
     height: 200px;
+        
+}
+
+@keyframes swimmer1go {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 99%;
+    }
+}
+
+@keyframes swimmer2go {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 99%;
+    }
+}
+
+@keyframes swimmer3go {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 99%;
+    }
 }
