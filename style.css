@@ -5,9 +5,8 @@
     background-color: blue;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-
+    /*justify-content: space-around;*/
+    position: relative;
 }
 
 .swimmer1{
@@ -15,13 +14,13 @@
     width: 50px;
     background-color: white;
     border-style: solid;
+    right: 0;
+    position: absolute;
+    top: 100PX;
   }
 
 .swimmer1go{
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-style: solid;
+   
     animation: 5s swimmer1go ;
 
 }
@@ -30,13 +29,12 @@
     width: 50px;
     background-color: white;
     border-style: solid;
-   
+    right: 0;
+    position: absolute;
+    top: 200PX;
 }
 .swimmer2go{
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-style: solid;
+   
     animation: 2s swimmer2go  ;
 }
 .swimmer3{
@@ -44,13 +42,14 @@
     width: 50px;
     background-color: white;
     border-style: solid;
+    right: 0;
+    position: absolute;
+    top: 300PX;
+
    }
 
 .swimmer3go{
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-style: solid;
+  
     animation: 3s swimmer3go ;
 }
 
@@ -66,28 +65,22 @@
 }
 
 @keyframes swimmer1go {
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 99%;
+   
+    to{
+        right: 450px;
     }
 }
 
 @keyframes swimmer2go {
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 99%;
+    to{
+        right: 450px;
     }
 }
 
 @keyframes swimmer3go {
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 99%;
-    }
+    to {
+        right: 450px;
+        
+    }    
+    
 }
